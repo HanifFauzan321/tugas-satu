@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  align-items: center;
+}
+
+.card {
+  background-color: black;
+  width: 10cm;
+  height: 12cm;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: 35%;
+  margin-top: 30px;
+  text-align: center;
+
+}
+
+.content {
+  width: 9cm;
+  height: 11cm;
+  border-radius: 20px;
+  margin: 0;
+  padding: 10;
+  background-color: goldenrod;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content img {
+  width: 4cm;
+  height: 5cm;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.card h3 {
+  margin: 0;
+  padding: 0;
+  color: ghostwhite;
+}
+
+.content h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.content p {
+  margin: 5px 0;
+}
+
+button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: crosshair;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+button:active {
+  background-color: #d0d0d0;
+}
+
+@keyframes flip {
+  0% { transform: scaleX(1); }
+  100% { transform: scaleX(-1); }
+}
+
+img:hover{
+  animation: flip 2s infinite alternate;
+  cursor: none;
+}
